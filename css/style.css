@@ -1,0 +1,166 @@
+:root {
+    --orange: #FFA100;
+    --green: #34bf5c;
+    --blue: #0955FF;
+    --navy: #090067;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(var(--blue), var(--green), var(--orange));
+    font-family: dongle, sans-serif;
+    color: var(--orange);
+
+}
+/*Default styling for all headers*/
+header {
+
+    background-color: rgba(33, 50, 199, 0.25);
+    margin-bottom: 50px;
+    text-align: center;
+}
+/* default styling for h1 elements (MAIN HEADER)*/
+h1 {
+    font-size: 40px;
+    font-family: Racing Sans One, sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+/* default styling for h2 elements (SUBHEADERS)*/
+h2 {
+    font-size: 32px;
+    font-family: Kodchasan, sans-serif;
+    font-weight: 400;
+    color: var(--navy);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+/*Default styling for all paragraphs*/
+p {
+    font-size: 24px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 400;
+    color: var(--navy);
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+/*Default styling for all links*/
+a {
+    color: var(--navy);
+    text-decoration: none;
+    padding-left: 5px;
+}
+/*Hover styling for hovered links*/
+a:hover {
+    text-decoration: underline;
+}
+
+/*Default styling for images*/
+img {
+    width: 20dvw;
+    height: auto;
+    border: 3px solid var(--navy);
+}
+/*default styling for all footers*/
+footer {
+    background-color: rgba(33, 50, 199, 0.25);
+    text-align: center;
+}
+/*default styling for grid styling in each section*/
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+}
+
+.grid-header {
+    grid-template-columns: repeat (12, 1fr);
+    grid-column: 3 / span 12;
+    text-align: left;
+}
+
+.grid-text {
+    grid-column: 5 / span 7;
+    
+    font-size: 16px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 400;
+    color: var(--navy);
+}
+.grid-text-left {
+    grid-column: 2 / span 7;
+    padding-right: 20px;
+}
+.grid-text-full {
+    grid-column: 3 / span 9;
+    padding-left: 20px;
+}
+.grid-div-img {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 2 / span 2;
+    grid-row: 2 ;
+}
+.grid-element{
+    grid-column: 9 / span 3;
+}
+iframe {
+    width: 100%;
+    display: block;
+    height: 20dvh;
+
+}
+/*Media queries for paragraphs, if over 600px set to variable sizing based off viewport width*/
+@media screen and (min-width: 601px) {
+    p {
+        font-size: 1.5dvw;
+    }
+    h2{
+        font-size: 2dvw;
+    }
+}
+/*Media queries for paragraphs, if under 600px set to fixed sizing of 20px*/
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 20px;
+    }
+    .grid-parent {
+        display: block;
+    
+    }
+    
+    .grid-header {
+        text-align: left;
+    }
+    .grid-text {
+        grid-column: 1 / span 1;
+        
+        font-size: 16px;
+        font-family: Quicksand, sans-serif;
+        font-weight: 400;
+        color: var(--navy);
+        padding-bottom: 10px;
+    }
+    img {
+        width: 80dvw;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
