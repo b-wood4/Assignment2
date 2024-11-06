@@ -52,7 +52,7 @@ h2 {
 /*Default styling for all paragraphs*/
 p {
     font-size: 24px;
-    font-family: Quicksand, sans-serif;
+    font-family: dongle, sans-serif;
     font-weight: 400;
     color: var(--navy);
     margin: 0px;
@@ -91,16 +91,18 @@ footer {
 }
 
 .grid-header {
+    display: flex;
     grid-template-columns: repeat (12, 1fr);
-    grid-column: 3 / span 12;
+    grid-column: 3 / span 3;
     text-align: left;
+    gap: 20px;
 }
 
 .grid-text {
     grid-column: 5 / span 7;
     
     font-size: 16px;
-    font-family: Quicksand, sans-serif;
+    font-family: dongle, sans-serif;
     font-weight: 400;
     color: var(--navy);
 }
@@ -119,12 +121,6 @@ footer {
 }
 .grid-element{
     grid-column: 9 / span 3;
-}
-iframe {
-    width: 100%;
-    display: block;
-    height: 20dvh;
-
 }
 /*Media queries for paragraphs, if over 600px set to variable sizing based off viewport width*/
 @media screen and (min-width: 601px) {
@@ -152,7 +148,7 @@ iframe {
         grid-column: 1 / span 1;
         
         font-size: 16px;
-        font-family: Quicksand, sans-serif;
+        font-family: dongle, sans-serif;
         font-weight: 400;
         color: var(--navy);
         padding-bottom: 10px;
