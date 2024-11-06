@@ -56,7 +56,7 @@ h2 {
 /*Default styling for all paragraphs*/
 p {
     font-size: 24px;
-    font-family: Dongle, sans-serif;
+    font-family: dongle, sans-serif;
     font-weight: 400;
     color: var(--navy);
     margin: 0px;
@@ -98,16 +98,18 @@ footer {
 }
 
 .grid-header {
+    display: flex;
     grid-template-columns: repeat (12, 1fr);
-    grid-column: 3 / span 12;
+    grid-column: 3 / span 3;
     text-align: left;
+    gap: 20px;
 }
 
 .grid-text {
     grid-column: 5 / span 7;
 
     font-size: 16px;
-    font-family: Quicksand, sans-serif;
+    font-family: dongle, sans-serif;
     font-weight: 400;
     color: var(--navy);
 }
@@ -124,13 +126,14 @@ footer {
 
 .grid-div-img {
     grid-template-columns: repeat(6, 1fr);
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 2;
     grid-row: 2;
 }
 
 .grid-element {
     grid-column: 9 / span 3;
 }
+
 /*Media queries for paragraphs, if over 600px set to variable sizing based off viewport width*/
 @media screen and (min-width: 601px) {
     p {
@@ -161,7 +164,7 @@ footer {
         grid-column: 1 / span 1;
 
         font-size: 16px;
-        font-family: Quicksand, sans-serif;
+        font-family: dongle, sans-serif;
         font-weight: 400;
         color: var(--navy);
         padding-bottom: 10px;
