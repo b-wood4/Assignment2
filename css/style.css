@@ -26,6 +26,7 @@ body {
     color: var(--orange);
 
 }
+
 /*Default styling for all headers*/
 header {
 
@@ -33,6 +34,7 @@ header {
     margin-bottom: 50px;
     text-align: center;
 }
+
 /* default styling for h1 elements (MAIN HEADER)*/
 h1 {
     font-size: 40px;
@@ -40,6 +42,7 @@ h1 {
     font-weight: 400;
     margin: 0px;
 }
+
 /* default styling for h2 elements (SUBHEADERS)*/
 h2 {
     font-size: 32px;
@@ -49,6 +52,7 @@ h2 {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.25);
 }
+
 /*Default styling for all paragraphs*/
 p {
     font-size: 24px;
@@ -66,6 +70,7 @@ a {
     text-decoration: none;
     padding-left: 5px;
 }
+
 /*Hover styling for hovered links*/
 a:hover {
     text-decoration: underline;
@@ -77,11 +82,13 @@ img {
     height: auto;
     border: 3px solid var(--navy);
 }
+
 /*default styling for all footers*/
 footer {
     background-color: rgba(33, 50, 199, 0.25);
     text-align: center;
 }
+
 /*default styling for grid styling in each section*/
 .grid-parent {
     display: grid;
@@ -100,59 +107,69 @@ footer {
 
 .grid-text {
     grid-column: 5 / span 7;
-    
+
     font-size: 16px;
     font-family: dongle, sans-serif;
     font-weight: 400;
     color: var(--navy);
 }
+
 .grid-text-left {
     grid-column: 2 / span 7;
     padding-right: 20px;
 }
+
 .grid-text-full {
     grid-column: 3 / span 9;
     padding-left: 20px;
 }
+
 .grid-div-img {
     grid-template-columns: repeat(6, 1fr);
     grid-column: 2 / span 2;
-    grid-row: 2 ;
+    grid-row: 2;
 }
-.grid-element{
+
+.grid-element {
     grid-column: 9 / span 3;
 }
+
 /*Media queries for paragraphs, if over 600px set to variable sizing based off viewport width*/
 @media screen and (min-width: 601px) {
     p {
         font-size: 1.5dvw;
     }
-    h2{
+
+    h2 {
         font-size: 2dvw;
     }
 }
+
 /*Media queries for paragraphs, if under 600px set to fixed sizing of 20px*/
 @media screen and (max-width: 600px) {
     p {
         font-size: 20px;
     }
+
     .grid-parent {
         display: block;
-    
+
     }
-    
+
     .grid-header {
         text-align: left;
     }
+
     .grid-text {
         grid-column: 1 / span 1;
-        
+
         font-size: 16px;
         font-family: dongle, sans-serif;
         font-weight: 400;
         color: var(--navy);
         padding-bottom: 10px;
     }
+
     img {
         width: 80dvw;
         display: block;
