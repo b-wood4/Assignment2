@@ -25,13 +25,13 @@ body {
     background: var(--blue);
     font-family: dongle, sans-serif;
     color: var(--purple);
-
+    
 }
 
 /*Default styling for all headers*/
 header {
 
-    background-color: rgba(0, 219, 150, 0.25);
+    background-color: var(--pink);
     margin-bottom: 0px;
     text-align: center;
 }
@@ -78,10 +78,7 @@ a:hover {
     font-weight: 600;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+
 
 /*Default styling for images*/
 img {
@@ -92,7 +89,7 @@ img {
 
 /*default styling for all footers*/
 footer {
-    background-color: rgba(0, 219, 150, 0.25);
+    background-color: var(--pink);
     text-align: center;
 }
 
@@ -100,29 +97,24 @@ footer {
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-
 }
 
 .grid-header-top {
-    display: flex;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 6 / span 8;
     text-align: left;
-    background-color: var(--teal);
+    background-color: rgba(0, 219, 150);
 }
 
 .grid-header-middle {
-    display: flex;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 8 / span 6;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: var(--yellow);
 }
 
 .grid-text {
     grid-column: 5 / span 7;
-
     font-size: 16px;
     font-family: dongle, sans-serif;
     font-weight: 400;
@@ -135,13 +127,15 @@ footer {
     grid-row: 2;
 }
 
-.grid-element {
-    grid-column: 9 / span 3;
-}
+.stretch-name{
 
-.how-to {
-    display: inline-block;
-    margin: 0 auto;
+    grid-column: 1 / span 8;
+    /* margin-left: auto; */
+    text-align: left;
+    font-size: 1rem;
+    font-family: Racing Sans One, sans-serif;
+    font-weight: 400;
+    color: var(--purple);
 }
 
 /*Media queries for paragraphs, if over 600px set to variable sizing based off viewport width*/
@@ -298,7 +292,8 @@ body {
 
 .navbar .menu-items {
     padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5); */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0); 
     height: 100vh;
     width: 100%;
     transform: translate(-150%);
@@ -340,6 +335,101 @@ body {
     transform: rotate(-45deg);
 }
 
-/* .nav-container input[type="checkbox"]:checked ~ .logo{
-  display: none;
-} */
+/* Accordion Menu */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
+.container-accordion {
+	width: 100%;
+	height: 100%;
+}
+.nav-accordion {
+	/* position: fixed; */
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+	background-color: var(--blue);
+}
+main {
+	position: fixed;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #fff;
+	overflow: auto;
+	padding: 40px;
+}
+
+.p-accordion {
+	padding-bottom: 20px;
+    margin-left: 28px;
+    font-family: "Dongle", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 350;
+    color: var(--purple);
+    list-style: square;
+}
+
+.ul-accord label.title, .ul-accord, a {
+	width: 100%;
+	color: var(--purple);
+	font-family: 'Kodchasan', sans-serif;
+	display: block;
+	font-weight: bold;
+}
+
+.breli {
+    display: list-item;
+    /* list-style-type: disc; */
+    /* padding-bottom: 20px; */
+    margin-left: 28px;
+    font-family: "Dongle", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 350;
+    /* color: var(--purple); */
+}
+
+.ul-accord label {
+	height: 50px;
+}
+
+.ul-accord li{
+	height: 50px;
+	overflow: hidden;
+	transition: all .3s;
+    background-color: var(--blue); 
+}
+
+label.title {
+	font-size: 1.25rem;
+	background: linear-gradient(var(--teal), var(--blue));
+	padding: 10px 15px;
+	cursor: pointer;
+  transition: all .25s;
+  
+}
+
+label:hover {
+	text-shadow: 0px 0px 10px #fff;
+}
+input[type="radio"] {
+	display: none;
+}
+/* Arm Circles */
+#ac-a:checked + li, #ac-b:checked + li, #ac-c:checked + li, #dco-a:checked + li, #dco-b:checked + li, #dco-c:checked + li, #ors-a:checked + li, #ors-b:checked + li, #ors-c:checked + li {
+	height: auto;
+}
+i {
+	margin-right: 12px;
+}
+@media screen and (max-width: 600px){
+	nav {
+		width: 100%;
+		position: relative;
+	}
+	main {
+		width: 100%;
+		position: relative;
+	}
+}
