@@ -107,7 +107,16 @@ footer {
     background-color: var(--pink);
     text-align: center;
 }
-
+.header-landing{
+    background-color: transparent;
+}
+.body-landing{
+  background-image: url(../images/mom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+}
 /*default styling for grid styling in each section*/
 .grid-parent {
     display: grid;
@@ -183,7 +192,9 @@ footer {
     .grid-header-top {
         text-align: left;
     }
-
+.grid-header-middle{
+    margin-bottom: 20px;
+}
     .grid-text {
         grid-column: 1 / span 1;
 
@@ -203,7 +214,6 @@ footer {
 }
 
 /* HAMBURGER MENU */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
@@ -246,8 +256,8 @@ body {
     text-decoration: none;
     color: var(--purple);
     font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
+    font-size: 2.7rem;
+    padding: 0.2rem;
 }
 
 .navbar .nav-container a:hover {
@@ -305,7 +315,6 @@ body {
 .navbar .menu-items {
     padding-top: 120px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, 10);
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0); */
     opacity: .85; 
     height: 100vh;
     background-color: var(--blue);
@@ -313,9 +322,8 @@ body {
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
-    margin-top: 30px;
+    margin-top: -90px;
+    padding-bottom: auto;
     transition: transform 0.5s ease-in-out;
     text-align: center;
 }
@@ -332,6 +340,10 @@ body {
     right: 15px;
     font-size: 1.2rem;
     color: var(--purple);
+}
+
+.logo-landing {
+    top: -5px;
 }
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -351,8 +363,6 @@ body {
 }
 
 /* Accordion Menu */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
 
 .container-accordion {
     width: 100%;
@@ -434,6 +444,10 @@ input[type="radio"] {
     display: none;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
 #ac-a:checked+li,
 #ac-b:checked+li,
 #ac-c:checked+li,
@@ -448,16 +462,4 @@ input[type="radio"] {
 
 i {
     margin-right: 12px;
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        width: 100%;
-        position: relative;
-    }
-
-    main {
-        width: 100%;
-        position: relative;
-    }
 }

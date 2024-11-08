@@ -13,8 +13,8 @@
         <link rel="icon" href="images/willow.ico" type="image/x-icon">
     </head>
 
-    <body>   <!-- NAV BAR  -->
-        <header>
+    <body class="body-landing">   <!-- NAV BAR  -->
+        <header class="header-landing">
             <nav>
                 <div class="navbar">
                     <div class="container nav-container">
@@ -25,7 +25,7 @@
                             <span class="line line3"></span>
                         </div>
                         <a href="index.html">
-                            <div class="logo">
+                            <div  class="logo logo-landing">
                                 <h1>STRETCH</h1>
                             </div>
                         </a>
@@ -45,31 +45,32 @@
         <!-- NEW -->
         <div class="flex-parent">
             <main>
-            <div class="container-accordion">
-                <nav class="nav-accordion">
-                    <ul class="ul-accord">
-                        <input type="radio" name="menu" id="ac-a" checked>
-                        <li>
-                            <label for="ac-a" class="title"><i class="fa fa-folder"></i>Upper Body</label>
-                            <div class="p-accordion">
-                                <a class="accordion-a" href="upperbodydynamic.html">Before Workout</a>
-                                <a class="accordion-a" href="upperbodystatic.html">After Workout</a>
-                            </div>
-                        </li>
-                        <input type="radio" name="menu" id="ac-b">
-                        <li>
-                            <label for="ac-b" class="title"><i class="fa fa-edit"></i>Lower Body</label>
-                            <div class="p-accordion">
-                                <a class="accordion-a" href="lowerbodydynamic.html">Before Workout</a>
-                                <a class="accordion-a" href="lowerbodydynamic.html">After Workout</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            
-            </div>
+
         </main>
                 <footer>
+                    <div class="container-accordion">
+                        <nav class="nav-accordion">
+                            <ul class="ul-accord">
+                                <input type="checkbox" name="menu" id="ac-a">
+                                <li>
+                                    <label for="ac-a" class="title"><i class="fa fa-folder"></i>Upper Body  ▼</label>
+                                    <div class="p-accordion">
+                                        <a class="accordion-a" href="upperbodydynamic.html">Before Workout</a>
+                                        <a class="accordion-a" href="upperbodystatic.html">After Workout</a>
+                                    </div>
+                                </li>
+                                <input type="checkbox" name="menu" id="ac-b">
+                                <li>
+                                    <label for="ac-b" class="title"><i class="fa fa-edit"></i>Lower Body  ▼</label>
+                                    <div class="p-accordion">
+                                        <a class="accordion-a" href="lowerbodydynamic.html">Before Workout</a>
+                                        <a class="accordion-a" href="lowerbodydynamic.html">After Workout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    
+                    </div>
                     <hr>
                     <nav>
                         <div>
