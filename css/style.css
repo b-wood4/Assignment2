@@ -103,12 +103,18 @@ footer {
     grid-template-columns: repeat(12, 1fr);
     grid-column: 6 / span 8;
     text-align: left;
-    background-color: rgba(0, 219, 150);
+    background-color: var(--teal);
 }
 
 .grid-header-middle {
     grid-template-columns: repeat(12, 1fr);
     grid-column: 8 / span 6;
+    text-align: left;
+    background-color: var(--yellow);
+}
+.grid-header-left-top {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2 / span 4;
     text-align: left;
     background-color: var(--yellow);
 }
@@ -413,7 +419,6 @@ label:hover {
 input[type="radio"] {
 	display: none;
 }
-/* Arm Circles */
 #ac-a:checked + li, #ac-b:checked + li, #ac-c:checked + li, #dco-a:checked + li, #dco-b:checked + li, #dco-c:checked + li, #ors-a:checked + li, #ors-b:checked + li, #ors-c:checked + li {
 	height: auto;
 }
