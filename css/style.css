@@ -105,19 +105,16 @@ footer {
     text-align: center;
 
 }
-
-.header-landing {
+.header-landing{
     background-color: transparent;
 }
-
-.body-landing {
-    background-image: url(../images/mom.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.body-landing{
+  background-image: url(../images/mom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
     background-position: center;
 }
-
 /*default styling for grid styling in each section*/
 .grid-parent {
     display: grid;
@@ -173,11 +170,9 @@ footer {
     .grid-header-top {
         text-align: left;
     }
-
-    .grid-header-middle {
-        margin-bottom: 20px;
-    }
-
+.grid-header-middle{
+    margin-bottom: 20px;
+}
     .grid-text {
         grid-column: 1 / span 1;
 
@@ -211,7 +206,7 @@ body {
 .container {
     max-width: 1050px;
     width: 90%;
-    margin: 0, auto;
+    margin: auto;
 }
 
 .navbar {
@@ -239,7 +234,7 @@ body {
     text-decoration: none;
     color: var(--purple);
     font-weight: 500;
-    font-size: 2.0rem;
+    font-size: 2.2rem;
     padding: 0.2rem;
 }
 
@@ -298,7 +293,7 @@ body {
 .navbar .menu-items {
     padding-top: 120px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, 10);
-    opacity: .85;
+    opacity: .85; 
     height: 100vh;
     background-color: var(--blue);
     width: 100%;
@@ -361,19 +356,17 @@ body {
     background-color: var(--blue);
 }
 
-.accordion-a {
-    text-decoration: none;
-    color: var(--purple);
-    display: block;
-    padding: 10px 25px;
-    transition: all .25s;
+.accordion-a{
+	text-decoration: none;
+	color: var(--purple);
+	display: block;
+	padding: 10px 25px;
+	transition: all .25s;
 }
-
 .accordion-a:hover {
-    background-color: var(--yellow);
-    box-shadow: inset 5px 0px 0px 0px #fff;
+	background-color: var(--yellow);
+  box-shadow: inset 5px 0px 0px 0px #fff;
 }
-
 .p-accordion {
     padding-bottom: 20px;
     margin-left: 28px;
