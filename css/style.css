@@ -14,18 +14,21 @@
 body,
 html {
 
-    min-height: 100vh;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     overflow-x: hidden;
+    /* height: 100%; */
 }
 
 body {
     background: var(--blue);
     font-family: dongle, sans-serif;
     color: var(--purple);
+}
 
+main {
+    flex: 1;
 }
 
 /*Default styling for all headers*/
@@ -78,7 +81,11 @@ a:hover {
     font-weight: 600;
 }
 
-
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /*Default styling for images*/
 img {
@@ -361,15 +368,6 @@ body {
     background-color: var(--blue);
 }
 
-main {
-    position: fixed;
-    right: 0;
-    width: 80%;
-    height: 100%;
-    background-color: #fff;
-    overflow: auto;
-    padding: 40px;
-}
 .accordion-a{
 	text-decoration: none;
 	color: var(--purple);
@@ -402,7 +400,7 @@ main {
 .breli {
     display: list-item;
     list-style-type: square;
-    /* padding-bottom: 20px; */
+    padding-right: 20px;
     margin-left: 28px;
     font-family: "Dongle", sans-serif;
     font-weight: 350;
